@@ -1,0 +1,1 @@
+alert('Akun Anda telah dibuat silahkan login');

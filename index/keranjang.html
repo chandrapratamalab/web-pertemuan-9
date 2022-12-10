@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Logo Title Bar -->
+    <link rel="icon" href="../assets/img/letter-M-with-man-vector-logo-design-removebg-preview.png" type="image/x-icon">
+    <title>Toko Barter </title>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: #e3f2fd;">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../assets/img/letter-M-with-man-vector-logo-design-removebg-preview.png" alt="Logo" width="30"
+                    height="24" class="d-inline-block align-text-top me-3">
+                Barter
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="index2.html#home">BERANDA</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index2.html#layanan">LAYANAN</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index2.html#fitur">FITUR</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index2.html#kontak">KONTAK</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="index2.html#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="keranjang.html">KERANJANG</a>
+                    </li>
+                </ul>
+
+                <div>
+                    <a href="index.html"><button type="button" class="btn btn-primary">Keluar</button></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- produk tabel -->
+    <div class="container-fluid p-5">
+        <div class="container d-flex justify-content-center align-items-center">
+            <table border="1" width="100%" cellpadding="5" cellspacing="0">
+                <tr class="text-center">
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Produk</th>
+                    <th>Harga</th>
+                    <th>QTY</th>
+                    <th>Total</th>
+                </tr>
+                <tr class="text-center">
+                    <td>1.</td>
+                    <td>Alfa</td>
+                    <td>10$ Roblox Gift Card</td>
+                    <td><input id="angka1" type="number" value="150000"></td>
+                    <td><input id="angka2" type="number" value="3"></td>
+                    <td id="total"></td>
+                </tr>
+                <tr class="text-center">
+                    <td>2.</td>
+                    <td>Beta</td>
+                    <td>5$ Steam Wallet Gift Card</td>
+                    <td><input id="angka9" type="number" value="80000"></td>
+                    <td><input id="angka10" type="number" value="2"></td>
+                    <td id="total2"></td>
+                </tr>
+                <tr class="text-center">
+                    <td>3.</td>
+                    <td>Delta</td>
+                    <td>15$ Itunes Gift Card</td>
+                    <td><input id="angka3" type="number" value="216000"></td>
+                    <td><input id="angka4" type="number" value="5"></td>
+                    <td id="total3"></td>
+                </tr>
+                <tr class="text-center">
+                    <td>4.</td>
+                    <td>Eta</td>
+                    <td>20$ Amazon Gift Card</td>
+                    <td><input id="angka5" type="number" value="315000"></td>
+                    <td><input id="angka6" type="number" value="2"></td>
+                    <td id="total4"></td>
+                </tr>
+                <tr class="text-center">
+                    <td>5.</td>
+                    <td>Zetta</td>
+                    <td>100$ Google Play Gift Card</td>
+                    <td><input id="angka7" type="number" value="1200000"></td>
+                    <td><input id="angka8" type="number" value="3"></td>
+                    <td id="total5"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="container-fluid">
+            <div class="container d-flex justify-content-center align-item-center p-3">
+                <button
+                    style="border: none; background-color: rgb(28, 204, 244); color: white; width: 200px; height: 40px; border-radius: 20px;"
+                    type="button" value="harga" onclick="hitung()">Hitung</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <!-- end produk tabel -->
+
+    <script>
+        function hitung() {
+            var x = document.getElementById("angka1").value;
+            var y = document.getElementById("angka2").value;
+            var a = document.getElementById("angka3").value;
+            var b = document.getElementById("angka4").value;
+            var c = document.getElementById("angka5").value;
+            var d = document.getElementById("angka6").value;
+            var e = document.getElementById("angka7").value;
+            var f = document.getElementById("angka8").value;
+            var k = document.getElementById("angka9").value;
+            var n = document.getElementById("angka10").value;
+            var z = x * y;
+            var q = a * b;
+            var l = c * d;
+            var p = e * f;
+            var y = k * n;
+            document.getElementById("total").innerHTML = "Rp." + z;
+            document.getElementById("total2").innerHTML = "Rp." + y;
+            document.getElementById("total3").innerHTML = "Rp." + q;
+            document.getElementById("total4").innerHTML = "Rp." + l;
+            document.getElementById("total5").innerHTML = "Rp." + p;
+
+        }
+    </script>
+</body>
+
+</html>

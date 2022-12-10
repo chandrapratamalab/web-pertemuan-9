@@ -1,0 +1,139 @@
+:root {
+    --primary-color: rgb(90, 90, 90);
+    --color-2: #e3f2fd;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(255, 255, 255);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.nav-link.active {
+    font-weight: 700;
+}
+
+.btn-primary {
+    width: 133px;
+    height: 40px;
+    background-color: transparent;
+    color: var(--primary-color);
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.banner {
+    height: 80vh;
+    background-position: auto;
+}
+
+.slide-text {
+    color: var(--primary-color);
+}
+
+/* Layanan */
+
+#layanan {
+    padding: 100px 0;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.sub-title {
+    font-size: 18px;
+}
+
+.card-layanan {
+    width: 100%;
+    height: 313px;
+    border-radius: 5px;
+    background-color: var(--color-2);
+    padding: 40px;
+    box-shadow: 0 0 7px 3px rgba(0, 0, 0, 0.5);
+}
+
+.circle-icon {
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.card-layanan h3 {
+    font-size: 24px;
+}
+
+.card-layanan p {
+    font-size: 12px;
+}
+
+#kontak {
+    background-image: url(../assets/img/letter-M-with-man-vector-logo-design-removebg-preview.png);
+    margin-top: 158px;
+    background-repeat: no-repeat;
+}
+
+#kontak .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#kontak .container {
+    padding: 148px 0 148px 0;
+}
+
+#kontak h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #ffff;
+}
+
+.card-contact {
+    width: 100%;
+    height: 445px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 52px 48px;
+}
+
+.card-contact h2 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 60px;
+    color: #00985B;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.form-control {
+    background-color: #C4C4C4;
+    height: 75px !important;
+}
+
+.button-kontak {
+    width: 100%;
+    height: 75px;
+    background: #00985B;
+    border: none;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
